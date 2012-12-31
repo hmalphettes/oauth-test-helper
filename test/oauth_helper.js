@@ -80,7 +80,7 @@ describe("When accessing a google api", function() {
   });
 });
 
-describe.only("When using the helper", function() {
+describe("When using the helper", function() {
   var _options = options();
   before(function(done) {
     _options.filePath = 'test_access_token';
