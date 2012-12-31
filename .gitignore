@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+git
+.DS_Store
+meta.json
+.idea
+coverage.html
+lib-cov
+.coverage_data
+reports
+build
+metadata
+access_token
+test_access_token
+*.tgz

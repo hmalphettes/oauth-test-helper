@@ -1,0 +1,34 @@
+{
+  "name": "oauth2-test-helper",
+  "version": "0.0.1",
+  "description": "Helper to get an access token and refresh token from google oauth2",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test",
+    "start": "node app"
+  },
+  "repository": "",
+  "main": "lib/oauth2_helper",
+  "keywords": [
+    "oauth2",
+    "google-oauth2",
+    "test"
+  ],
+  "author": "hmalphettes",
+  "license": "BSD",
+  "dependencies": {
+    "express": "3.x",
+    "async": "*",
+    "passport": "*",
+    "superagent": "*",
+    "passport-google-oauth": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "0.8.x"
+  }
+}
