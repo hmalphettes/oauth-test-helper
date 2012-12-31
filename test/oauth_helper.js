@@ -1,7 +1,7 @@
 var request = require('superagent')
   , fs = require('fs')
   , should = require('should');
-
+require('long-stack-traces');
 var libpath = process.env.COVER ? '../lib-cov' : '../lib';
 var utils = require(libpath + '/utils');
 var OAuth2TestHelper = require(libpath + '/oauth2_helper');
@@ -73,9 +73,10 @@ describe("When accessing a google api", function() {
     });
   });
   it("Must be able to read the email of the integration tester", function(done) {
-    OAuth2TestHelper.checkToken(function(err, res) {
+    OAuth2TestHelper.checkToken(access_token, function(err, res) {
       should.exist(res);
       should.exist(res.email);
+      done(err);
     });
   });
 });

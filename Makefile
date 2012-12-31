@@ -1,4 +1,4 @@
-MOCHA_OPTS = --timeout 20000
+MOCHA_OPTS = --timeout 30000
 REPORTER = spec
 TEST_FILES = test/*.js
 DUMP_OPTS = 
